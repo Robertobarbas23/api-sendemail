@@ -1,0 +1,49 @@
+POST http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+  "name": "desconocido",
+  "email": "tandemrobertoaranjuez@gmail.com",
+  "message": "Hola Roberto."
+}
+
+### PRUEBA DE CORREO CON ALGUN DATO QUE FALTA
+POST http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+  "name": "desconocido",
+  "email": "tandemrobertoaranjuez@gmail.com",
+  "message": ""
+}
+### PRUEBA DE CORREO CON MAIL ERRONEO
+POST http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+  "name": "desconocido",
+  "email": "idiota@gmail",
+  "message": "Hola Roberto."
+}
+### PRUEBA DE CORREO CON TODOS LOS DATOS FALTANTES
+POST http://localhost/api/v1/endpoint-webservice/
+Content-Type: "application/json"
+
+{
+  "name": "",
+  "email": "",
+  "message": ""
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
